@@ -1,0 +1,126 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+  }
+  
+  :root {
+    --primary-bg: #0a0a23; 
+    --secondary-bg: #1c1c3c;
+    --accent-color: #c0c0f0; 
+    --link-color: #c0f0ed;
+    --text-color: #ffffff;
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+body {
+  font-family: var(--font-family);
+  background-color: var(--primary-bg);
+  color: var(--text-color);
+  line-height: 1.6;
+  background-image: url('icons/bg.png'); 
+  background-repeat: repeat; 
+  background-size: auto; 
+}
+
+.activities-title-link:hover,
+.activities-title-link:focus {
+    text-decoration: underline;
+}
+  
+#contact-details a {
+  color: var(--link-color);
+}
+#contact-details a:hover {
+  color: var(--accent-color);
+}
+
+  header#spaceport-header {
+    background-color: var(--secondary-bg);
+    text-align: center;
+    padding: 1em 0;
+    margin-bottom: 10px;
+  }
+  
+  .header-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5em;
+  }
+  
+  /* Navigation styles */
+  nav#space-nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav#space-nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav#space-nav ul li a {
+    color: var(--text-color);
+    font-size: 1.2rem;
+  }
+  
+  nav#space-nav ul li a:hover {
+    color: var(--accent-color);
+  }
+  
+  /* Main content styles */
+  main#home {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  
+  main#home section#introduction {
+    background-color: var(--secondary-bg);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+  
+  main#home section#introduction h2 {
+    font-size: 1.8rem;
+    color: var(--accent-color);
+    margin-bottom: 1em;
+  }
+  
+  main#home section#introduction p {
+    font-size: 1rem;
+  }
+  #about-me {
+    background-color: var(--secondary-bg);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    color: var(--accent-color);
+  }
+  
+  #about-me h2 {
+    color: var(--accent-color);
+    margin-bottom: 1em;
+  }
+  
+  #about-me p {
+    color: var(--text-color);
+    margin-bottom: 1em;
+  }
+  
+  
+  footer#spaceport-footer {
+    background-color: var(--primary-bg);
+    color: var(--text-color);
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+    
+
+  

@@ -1,0 +1,128 @@
+/* Education Main Styles */
+#education-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  /* Academic Journey Styles */
+  #academic-journey {
+    background-color: var(--secondary-bg);
+    color: var(--primary-text);
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #academic-journey h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .university-experience {
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Activities and Clubs Styles */
+  #activities-clubs {
+    background-color: var(--secondary-bg);
+    color: var(--primary-text);
+    padding: 2rem;
+    border-radius: 8px;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #activities-clubs h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .activity, .club {
+    margin-bottom: 1.5rem;
+  }
+  /* NASA Academy Styles */
+#nasa-academy {
+    background-color: var(--secondary-bg);
+    color: var(--primary-text);
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; 
+  }
+  
+  #nasa-academy .activity-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+  
+  /* Club Styles */
+  #developers-club, a {
+    background-color: var(--secondary-bg);
+    color: var(--primary-text);
+    padding: 0rem;
+    border-radius: 8px;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left; 
+  }
+
+  .project-title-link:hover,
+.project-title-link:focus {
+    text-decoration: underline;
+}
+  
+  #developers-club .activity-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #nasa-academy, #developers-club {
+      width: 95%;
+    }
+  }
+  
+  .activity-image {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto; 
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #education-main {
+      padding: 1rem;
+    }
+  
+    #academic-journey, #activities-clubs {
+      width: 95%;
+    }
+  }
+  
+  /* Additional visual cues for headings and details */
+  h2 {
+    color: var(--highlight);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  h3 {
+    margin-top: 0.5rem;
+    color: var(--primary-text);
+  }
+  
+  p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+  
+  

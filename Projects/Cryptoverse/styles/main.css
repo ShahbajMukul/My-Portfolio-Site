@@ -1,0 +1,47 @@
+body {
+    background: linear-gradient(to right, #F0F4F8, #D9E4E7);
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    color: #F0F4F8;
+    font-style: oblique;
+    background-color: #293845;
+    font-size: 3em;
+}
+
+#mainContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#dropdownContainer {
+    width: auto;
+    padding: 1em;
+    margin-top: 1%;
+}
+
+#infoContainer {
+    flex-grow: 1;
+    padding: 1em;
+    max-width: 250px;
+    margin: auto;
+}
+
+#cryptoInfo {
+    box-sizing: border-box;
+    border: 0.3em solid #090979a5;
+    padding: 1em;
+    margin: 0;
+    width: 100%;
+}
+
+#cryptoName {
+    text-align: center;
+    border-bottom: 5px solid #090979a5;
+    margin-left: -17px;
+    margin-right: -17px;
+}

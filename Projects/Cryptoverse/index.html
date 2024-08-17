@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptoverse</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/fetch-data.js"></script>
+</head>
+<body>
+    <header>Cryptoverse</header>
+
+    <div id="mainContainer">
+
+        <div id="dropdownContainer">
+            <select id="currencyList" onchange="dropdown()">
+                <option>choose a currency</option>
+            </select>
+        </div>
+
+        <div id="infoContainer">
+            <section id="cryptoInfo">
+                <h2 id="cryptoName">Choose A Currency</h2>
+                <p id="cryptoSymbol">Symbol: </p>
+                <p id="cryptoSupply">Supply: </p>
+                <p id="cryptoPrice">Price in USD: </p>
+                <p id="cryptoChange">Change in 24hr: </p>
+                <p id="cryptoRank">Rank: </p>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
