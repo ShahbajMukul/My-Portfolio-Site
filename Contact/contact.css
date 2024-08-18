@@ -1,11 +1,3 @@
-/* Comms Main Styles */
-#comms-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-  }
-  
   /* Contact Info Styles */
   #contact-info {
     background-color: var(--secondary-bg);
