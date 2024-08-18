@@ -89,3 +89,44 @@ nav ul li a:hover {
     margin-top: 1rem;
 }
 
+#skills {
+    text-align: center;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+#skills h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.skills-column {
+    flex: 1;
+    text-align: center;
+}
+
+.skills-column h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.skills-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.skills-list li {
+    margin-bottom: 0.5rem;
+}
+
+.skills-column ul {
+    display: inline-block;
+    text-align: left;
+}

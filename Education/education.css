@@ -1,31 +1,12 @@
 /* Education Main Styles */
   
   /* Academic Journey Styles */
-  #academic-journey {
-    background-color: var(--secondary-bg);
-    color: var(--primary-text);
-    padding: 2rem;
-    border-radius: 8px;
-    margin-bottom: 2rem;
-    width: 80%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
+
   
   #academic-journey h2 {
     margin-bottom: 1rem;
   }
   
-
-  
-  /* Activities and Clubs Styles */
-  #activities-clubs {
-    background-color: var(--secondary-bg);
-    color: var(--primary-text);
-    padding: 2rem;
-    border-radius: 8px;
-    width: 80%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
   
   #activities-clubs h2 {
     margin-bottom: 1rem;
