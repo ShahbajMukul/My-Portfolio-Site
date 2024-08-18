@@ -106,6 +106,27 @@
     margin: auto;
   }
 
+  #skills-summary {
+    background-color: #2a2a2a;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.skills-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills-item {
+    width: 48%;
+}
+
+.skills-item h4 {
+    margin-top: 0;
+    color: #0c79b7;
+}
+
   /* Navigation buttons */
   .slideshow-button {
     position: absolute;
@@ -135,6 +156,7 @@
   .slideshow-container img:first-child {
     display: block;
   }
+  
 
   /* Responsive Design */
   @media (max-width: 768px) {

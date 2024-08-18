@@ -80,20 +80,20 @@ body {
     padding: 2rem;
   }
   
-  main#home section#introduction {
+section {
     background-color: var(--secondary-bg);
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
   }
   
-  main#home section#introduction h2 {
+section h2 {
     font-size: 1.8rem;
     color: var(--accent-color);
     margin-bottom: 1em;
   }
   
-  main#home section#introduction p {
+section p {
     font-size: 1rem;
   }
   #about-me {
@@ -125,6 +125,13 @@ body {
     width: 100%;
   }
   
-    
+  
+  a {
+    color: white
+  }
 
+  a:hover
+  {
+      color: purple;
+  }
   
