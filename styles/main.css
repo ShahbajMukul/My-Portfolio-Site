@@ -166,3 +166,49 @@ main {
 .star-field .layer:nth-child(4){animation:sf-fly-by-4 16s linear infinite}
 .star-field .layer:nth-child(5){animation:sf-fly-by-5 18s linear infinite}
 .star-field .layer:nth-child(6){animation:sf-fly-by-6 20s linear infinite}
+
+/* About Section Layout */
+.about-content {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.profile-image {
+  flex: 0 0 300px;
+  position: sticky;
+  top: 2rem;
+  
+}
+
+.profile-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border: 3px solid var(--accent-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-image img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column-reverse;
+  }
+  
+  .profile-image {
+    flex: 0 0 auto;
+    width: 200px;
+    margin: 0 auto 2rem;
+    position: relative;
+  }
+}
