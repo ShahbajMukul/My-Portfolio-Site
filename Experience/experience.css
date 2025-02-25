@@ -1,4 +1,3 @@
-
 header {
     background-color: #1a1a1a;
     padding: 1rem 0;
@@ -36,12 +35,15 @@ nav ul li a:hover {
     margin: 2rem auto;
     padding: 0 1.5rem;
 }
-
 .experience-card {
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     margin-bottom: 2rem;
+    max-width: 1200px;
+    margin: auto;
+    
+
 }
 
 .experience-header h2 {
@@ -57,23 +59,24 @@ nav ul li a:hover {
 .experience-content {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center; /* Vertically align items */
     margin-top: 1rem;
     margin-bottom: 1.5rem;
 }
 
 .experience-description {
-    flex: 1;
-    margin: auto;
-    margin-right: 2rem;
+    flex: 2; /* Take up more space */
+    margin-right: 1rem; /* Add some spacing between description and image */
 }
 
 .experience-image {
-    max-width: 300px;
+    flex: 1; /* Take up less space */
+    max-width: 200px; /* Limit image width */
 }
 
 .experience-image img {
-    max-width: 100%;
+    width: 100%; /* Make image fill the container */
+    height: auto; /* Maintain aspect ratio */
     border-radius: 4px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
@@ -93,6 +96,8 @@ nav ul li a:hover {
     text-align: center;
     padding: 2rem;
     border-radius: 8px;
+    max-width: 800px;
+    margin: auto;
 }
 
 #skills h2 {
