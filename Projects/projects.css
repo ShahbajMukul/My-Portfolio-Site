@@ -186,3 +186,167 @@
     height: 100%;
     border: none;
 }
+
+/* Timeline Navigation - Initially below header, then sticky */
+.category-timeline {
+    position: relative; /* Start as regular positioned element */
+    z-index: 1000;
+    background: linear-gradient(to right, rgba(10, 10, 35, 0.9), rgba(28, 28, 60, 0.9));
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(192, 192, 240, 0.2);
+}
+
+/* Class added via JavaScript when scrolling */
+.category-timeline.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 0;
+}
+
+/* No need for extra padding at the top initially */
+main#card1 {
+    padding-top: 0;
+}
+
+/* Add padding to prevent content jump when timeline becomes sticky */
+main#card1.timeline-is-sticky {
+    padding-top: 70px; /* Same height as timeline */
+}
+
+/* Timeline List Styles */
+.category-timeline ul {
+    display: flex; /* Display items horizontally */
+    justify-content: space-around; /* Distribute items evenly */
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+/* The timeline progress bar container */
+.timeline-progress-container {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    right: 5%;
+    height: 2px;
+    background: rgba(192, 192, 240, 0.3);
+    transform: translateY(-50%);
+    overflow: hidden;
+}
+
+/* The cosmic liquid progress indicator */
+.timeline-progress-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%; /* Will be updated by JS */
+    background: linear-gradient(90deg, 
+        rgba(64, 0, 255, 0.7),
+        rgba(0, 200, 255, 0.8) 30%,
+        rgba(192, 192, 240, 0.9) 70%, 
+        rgba(255, 215, 0, 0.8));
+    box-shadow: 0 0 10px rgba(192, 240, 255, 0.8), 
+                0 0 20px rgba(192, 240, 255, 0.5);
+    transition: width 0.1s ease;
+}
+
+/* Space particles in the liquid */
+.timeline-progress-bar::before,
+.timeline-progress-bar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.8) 1px, transparent 1px),
+        radial-gradient(circle at 40% 50%, rgba(255, 255, 255, 0.6) 1px, transparent 1px),
+        radial-gradient(circle at 60% 50%, rgba(255, 255, 255, 0.9) 1px, transparent 1px),
+        radial-gradient(circle at 80% 50%, rgba(255, 255, 255, 0.7) 1px, transparent 1px);
+    background-size: 60px 10px;
+    animation: floatingParticles 3s linear infinite;
+}
+
+.timeline-progress-bar::after {
+    background-size: 40px 10px;
+    animation-duration: 2s;
+    animation-direction: reverse;
+}
+
+@keyframes floatingParticles {
+    0% { background-position: 0 0; }
+    100% { background-position: 60px 0; }
+}
+
+/* Timeline item styling */
+.timeline-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 0 1.5rem;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+/* Rest of timeline styles */
+.timeline-dot {
+    width: 12px;
+    height: 12px;
+    background: var(--accent-color);
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 2;
+}
+
+.timeline-label {
+    font-size: 0.9rem;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.timeline-item:hover .timeline-dot,
+.timeline-item.active .timeline-dot {
+    transform: scale(1.5);
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.8)
+}
+
+.timeline-item:hover .timeline-label,
+.timeline-item.active .timeline-label {
+    opacity: 1;
+    transform: translateY(2px);
+}
+
+/* Add spacing for the fixed timeline */
+main#card1 {
+    padding-top: 70px; /* Adjust this value based on your timeline height */
+}
+
+/* Responsive Timeline */
+@media (max-width: 768px) {
+    .category-timeline ul {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    
+    .category-timeline ul::before {
+        display: none;
+    }
+    
+    .timeline-item {
+        padding: 0.5rem;
+    }
+}

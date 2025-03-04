@@ -42,8 +42,8 @@ header#spaceport-header {
   text-align: center;
   padding: 1em 0;
   margin-bottom: 10px;
+  opacity: 0.85;
 }
-  
   .header-content h1 {
     font-size: 2.5rem;
     margin-bottom: 0.5em;

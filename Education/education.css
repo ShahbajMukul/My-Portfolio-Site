@@ -1,101 +1,107 @@
 /* Education Main Styles */
-  
-  /* Academic Journey Styles */
+#uni-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
 
-  
-  #academic-journey h2 {
-    margin-bottom: 1rem;
-  }
-  
-  
-  #activities-clubs h2 {
-    margin-bottom: 1rem;
-  }
-  
-  .activity, .club {
-    margin-bottom: 1.5rem;
-  }
-  /* NASA Academy Styles */
-#nasa-academy {
-    background-color: var(--secondary-bg);
-    color: var(--primary-text);
+.education-card {
     padding: 2rem;
     border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     margin-bottom: 2rem;
-    width: 80%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center; 
-  }
-  
-  #nasa-academy .activity-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 4px;
-    margin-bottom: 1rem;
-  }
-  
-  /* Club Styles */
-  #developers-club, a {
-    background-color: var(--secondary-bg);
-    color: var(--primary-text);
-    padding: 0rem;
-    border-radius: 8px;
-    width: 80%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: left; 
-  }
-
-  .project-title-link:hover,
-.project-title-link:focus {
-    text-decoration: underline;
-}
-  
-  #developers-club .activity-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 4px;
-    margin-bottom: 1rem;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    #nasa-academy, #developers-club {
-      width: 95%;
-    }
-  }
-  
-  .activity-image {
     width: 100%;
-    max-width: 400px;
-    margin: 0 auto; 
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    #education-main {
-      padding: 1rem;
-    }
-  
-    #academic-journey, #activities-clubs {
-      width: 95%;
-    }
-  }
-  
-  /* Additional visual cues for headings and details */
-  h2 {
+    background-color: var(--secondary-bg);
+}
+
+/* Academic Journey Styles */
+
+#academic-journey h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+
+#uni-text {
+    margin-top: 1rem;
+    max-width: 800px;
+    margin: 1rem auto;
+}
+
+.uni-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.uni-list li {
+  background-color: var(--primary-bg);
     color: var(--highlight);
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+}
+
+.skills-list li:hover {
+  transform: scale(1.05);
+}
+
+/* Club Styles */
+#developers-club {
+    text-align: left;
+    background-color: var(--secondary-bg);
+    padding: 2rem;
+    border-radius: 8px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 2rem auto;
+}
+
+#developers-club .activity-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+/* Activities and Clubs Section */
+#activities-clubs {
+    width: 100%;
+    margin: 2rem auto;
+}
+
+.activity, .club {
+    margin-bottom: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #education-main {
+        padding: 1rem;
+    }
+
+    #academic-journey, #activities-clubs {
+        width: 95%;
+    }
+}
+
+/* Additional visual cues for headings and details */
+h2 {
+    color: var(--highlight);
+    text-align: center;
     text-transform: uppercase;
     letter-spacing: 1px;
-  }
-  
-  h3 {
+}
+
+h3 {
     margin-top: 0.5rem;
     color: var(--primary-text);
-  }
-  
-  p {
+}
+
+p {
     font-size: 0.9rem;
-    line-height: 1.4;
-  }
-  
-  
+    line-height: 2;
+}
+
